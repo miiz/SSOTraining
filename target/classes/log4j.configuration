@@ -1,0 +1,21 @@
+# Root/Default logging settings
+log4j.rootCategory=debug, stdout
+handlers=org.slf4j.bridge.SLF4JBridgeHandler
+
+# -------------------------------------------------
+# For output to console together
+# -------------------------------------------------
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+
+# %x for nested context, %t for thread, %c{1} for classname, other things may be much slower
+log4j.appender.stdout.layout.ConversionPattern=%d{ABSOLUTE} [%x] %5p %c{1}: %m%n
+
+
+log4j.logger.com=INFO
+log4j.logger.org=INFO
+log4j.logger.org.apache.camel=DEBUG
+log4j.logger.org.apache.cxf=DEBUG
+log4j.logger.com.wcg=info
+
+

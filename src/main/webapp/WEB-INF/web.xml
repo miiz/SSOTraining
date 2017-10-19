@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app
+  PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+  "http://java.sun.com/dtd/web-app_2_3.dtd">
+<!-- web-app_2_3.dtd or http://java.sun.com/dtd/web-app_2_3.dtd -->
+<web-app id="sso-training">
+	<display-name>sso-training</display-name>
+
+	<servlet>
+		<servlet-name>MyServlet2</servlet-name>
+		<display-name>MyServlet in Servlet 2.x</display-name>
+		<servlet-class>com.wcg.training.sso.MyServlet2</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MyServlet2</servlet-name>
+		<url-pattern>/MyServlet2</url-pattern>
+	</servlet-mapping>
+</web-app>
